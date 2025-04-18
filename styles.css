@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Paytone+One&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-blueMain: #195566;
+    --color-greenMain: #005239;
+    --color-pinkMain: #E38181;
+    --color-yellowMain: #F5CA94;
+    --color-tealMain: #70B2B1;
+    --color-creamMain: #F7E6D4;
+    --color-default: #2B2B2B;
+    --font-large: "Paytone One", sans-serif;
+    --font-small: "Didact Gothic", sans-serif;
+}
