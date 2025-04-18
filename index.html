@@ -9,25 +9,42 @@
 </head>
 <body class="bg-[#005239]">
     <nav class="bg-blueMain m-2 px-4 rounded-[12px] py-5 flex place-content-between">
-        <div class="name font-large text-[28px] text-white">Creative Sidekick</div>
+        <div class="name font-large text-[32px] text-white">Creative Sidekick</div>
         <div class="hamburgerMenu md:hidden cursor-pointer flex items-center">
                 <img class="w-10" src="./public/images/hamburgerOpen.svg" alt="Menu-open">
         </div>
     </nav>
-    <div class="hero bg-pinkMain m-2 rounded-[20px] flex">
+    <div class="hero bg-pinkMain my-4 mx-2 rounded-[20px] flex">
             <img class="w-60" src="./public/images/logo-sm.svg" alt="Creative Sidekick logo small">
         <div class="heroText py-5 pr-5">
             <h1 class="font-large text-[28px] leading-7 text-greenMain mb-5">Professional</br>Virtual</br>Assistant</h1>
             <p class="font-small text-[14px] text-default mr-[-10px]">Helping creatives focus on their art while I handle the details.</p>
         </div>
     </div>
-    <div class="services bg-creamMain m-2 rounded-[20px] flex">
+    <div class="services bg-yellowMain my-4 mx-2 rounded-[20px]">
         <h1 class="font-large text-[28px] pl-5 text-default">Services</h1>
-        <div class="grid">
-            <div></div>
+        <div class="grid grid-cols-2 gap-4 auto-rows-fr font-signika font-bold text-lg leading-6 py-5 mx-2 content-center">
+            <div class="card">Administrative<br>Support</div>
+            <div class="card">Media & Event<br>Production<br>Support</div>
+            <div class="card">Social Media<br>Management</div>
+            <div class="card">Content<br>Consulting</div>
         </div>
     </div>
-    <div class="contact"></div>
+    <div class="contact bg-tealMain my-4 mx-2 rounded-[20px] border-2 border-white text-white">
+      <h1 class="font-large text-[28px] text-center">Contact Me!</h1>
+      <div class="flex gap-5 justify-center items-center content-center py-10">
+        <div class="imageWrapper flex flex-col gap-8">
+          <div class="flex justify-center">
+            <img src="/public/images/insta.svg" alt="Instagram icon">
+          </div>
+          <img src="/public/images/email.svg" alt="Email icon">
+        </div>
+        <div class="textWrapper flex flex-col gap-10 justify-center">
+          <p>@the_creativesidekick</p>
+          <p>hello@thecreativesidekick.com</p>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

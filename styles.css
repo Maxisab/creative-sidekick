@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Paytone+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/signika-sc-2');
 @import "tailwindcss";
 
 @theme {
@@ -12,4 +13,20 @@
     --color-default: #2B2B2B;
     --font-large: "Paytone One", sans-serif;
     --font-small: "Didact Gothic", sans-serif;
+    --font-signika: "Signika SC", sans-serif;
+    --shadow-custom: 4px 4px 4px rgba(0,0,0,0.25);
+}
+
+@layer components {
+  .card {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-creamMain); 
+    border-radius: 12px;
+    border: 2px solid; 
+    border-color: #ECCBC4;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
