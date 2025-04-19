@@ -8,43 +8,76 @@
     <title>The Creative Sidekick</title>
 </head>
 <body class="bg-[#005239]">
+  <!-- Navbar -->
     <nav class="bg-blueMain m-2 px-4 rounded-[12px] py-5 flex place-content-between">
         <div class="name font-large text-[32px] text-white">Creative Sidekick</div>
-        <div class="hamburgerMenu md:hidden cursor-pointer flex items-center">
-                <img class="w-10" src="./public/images/hamburgerOpen.svg" alt="Menu-open">
+        <div id="hamburger-button" class="hamburgerMenu md:hidden cursor-pointer flex items-center">
+            <img class="w-10" src="./public/images/hamburgerOpen.svg" alt="Menu-open">
         </div>
     </nav>
-    <div class="hero bg-pinkMain my-4 mx-2 rounded-[20px] flex">
+    <div id="mobile-menu" class="hidden bg-blueMain rounded-b-[12px] py-3 absolute right-2 top-[84px] w-36 z-10 shadow-custom">
+        <div class="flex flex-col space-y-4">
+            <a class="nav-link text-pinkMain text-lg font-large text-center pt-2" href="#about">About Me</a>
+            <a class="nav-link text-creamMain text-lg font-large text-center pt-2" href="#experience">Experience</a>
+            <a class="nav-link text-tealMain text-lg font-large text-center pt-2 pb-2" href="#inquiry">Inquiry Form</a>
+        </div>
+    </div>
+    <!-- Home page -->
+    <div id="home">
+        <div class="hero bg-pinkMain my-4 mx-2 rounded-[20px] flex">
             <img class="w-60" src="./public/images/logo-sm.svg" alt="Creative Sidekick logo small">
-        <div class="heroText py-5 pr-5">
-            <h1 class="font-large text-[28px] leading-7 text-greenMain mb-5">Professional</br>Virtual</br>Assistant</h1>
-            <p class="font-small text-[14px] text-default mr-[-10px]">Helping creatives focus on their art while I handle the details.</p>
+            <div class="heroText py-5 pr-5">
+                <h1 class="font-large text-[28px] leading-7 text-greenMain mb-5">Professional</br>Virtual</br>Assistant</h1>
+                <p class="font-small text-[14px] text-default mr-[-10px]">Helping creatives focus on their art while I handle the details.</p>
+            </div>
+        </div>
+        <div class="services bg-yellowMain my-4 mx-2 rounded-[20px] relative">
+            <div class="flex place-content-between">
+                  <h1 class="font-large text-[28px] pl-8 text-default">Services</h1>
+                  <img class="absolute right-[35%] top-[-15px]" src="/public/images/mascot1.svg" alt="Sidekick Mascot">
+            </div>
+            <div class="grid grid-cols-2 gap-4 auto-rows-fr font-signika font-bold text-lg leading-6 py-5 mx-2 content-center">
+                <div class="card">Administrative<br>Support</div>
+                <div class="card">Media & Event<br>Production<br>Support</div>
+                <div class="card">Social Media<br>Management</div>
+                <div class="card">Content<br>Consulting</div>
+            </div>
+        </div>
+        <div class="contact bg-darkTeal my-4 mx-2 rounded-[20px] border-2 border-white text-white">
+            <div class="flex place-content-between pt-2">
+                <h1 class="font-large text-[28px] pl-9 text-center">Contact Me!</h1>
+                <img class="absolute right-[5%]" src="/public/images/laptopM.svg" alt="Laptop icon">
+            </div>
+            <div class="flex gap-5 justify-center items-center content-center py-10">
+                <div class="imageWrapper flex flex-col gap-8">
+                    <div class="flex justify-center">
+                        <img src="/public/images/insta.svg" alt="Instagram icon">
+                    </div>
+                    <img src="/public/images/email.svg" alt="Email icon">
+                </div>
+                <div class="textWrapper flex flex-col gap-10 justify-center">
+                    <p>@the_creativesidekick</p>
+                    <p>hello@thecreativesidekick.com</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="services bg-yellowMain my-4 mx-2 rounded-[20px]">
-        <h1 class="font-large text-[28px] pl-5 text-default">Services</h1>
-        <div class="grid grid-cols-2 gap-4 auto-rows-fr font-signika font-bold text-lg leading-6 py-5 mx-2 content-center">
-            <div class="card">Administrative<br>Support</div>
-            <div class="card">Media & Event<br>Production<br>Support</div>
-            <div class="card">Social Media<br>Management</div>
-            <div class="card">Content<br>Consulting</div>
-        </div>
-    </div>
-    <div class="contact bg-tealMain my-4 mx-2 rounded-[20px] border-2 border-white text-white">
-      <h1 class="font-large text-[28px] text-center">Contact Me!</h1>
-      <div class="flex gap-5 justify-center items-center content-center py-10">
-        <div class="imageWrapper flex flex-col gap-8">
-          <div class="flex justify-center">
-            <img src="/public/images/insta.svg" alt="Instagram icon">
-          </div>
-          <img src="/public/images/email.svg" alt="Email icon">
-        </div>
-        <div class="textWrapper flex flex-col gap-10 justify-center">
-          <p>@the_creativesidekick</p>
-          <p>hello@thecreativesidekick.com</p>
-        </div>
-      </div>
-    </div>
+    
+    <!-- Other pages of the mobile site -->
+
+    <!-- About Me Mobile -->
+    <section id="about" class="hidden content-section">
+      <h1>About</h1>
+    </section>
+    <!-- Experience Mobile -->
+    <section id="experience" class="hidden content-section">
+      <h1>Experience</h1>
+    </section>
+    <!-- Inquiry Form Mobile -->
+    <section id="inquiry" class="hidden content-section">
+      <h1>Inquiry</h1>
+    </section>
+
     <script src="app.js"></script>
 </body>
 </html>
