@@ -7,9 +7,9 @@
     <link rel="shortcut icon" href="#">
     <title>The Creative Sidekick</title>
 </head>
-<body class="bg-[#005239]">
+<body class="bg-greenMain">
   <!-- Navbar -->
-    <nav class="bg-blueMain m-2 px-4 rounded-[12px] py-5 flex place-content-between">
+    <nav class="bg-blueMain m-2 px-4 rounded-[12px] py-5 flex place-content-between ">
         <div class="back-button font-large text-[32px] text-white">Creative Sidekick</div>
         <div id="hamburger-button" class="hamburgerMenu lg:hidden cursor-pointer flex items-center">
             <img class="w-10" src="../public/images/hamburgerOpen.svg" alt="Menu-open">
@@ -23,7 +23,7 @@
         </div>
     </div>
     <!-- Home page -->
-    <div id="home">
+    <div id="home" class="bg-greenMain">
         <div class="hero bg-pinkMain my-4 mx-2 rounded-[20px] flex">
             <img class="w-60" src="/public/images/logo-sm.svg" alt="Creative Sidekick logo small">
             <div class="heroText py-5 pr-5">
@@ -67,27 +67,39 @@
 
     <!-- About Me Mobile -->
     <section id="about" class="hidden content-section">
-      <div class="bg-pinkMain relative">
-        <img src="/public/images/aboutHeroM.png" alt="Photo of me">
+      <div class="bg-pinkMain relative pt-[380px] pb-8 flex-col">
+        <img class="absolute top-4 ml-[-20px]" src="/public/images/aboutHeroM.png" alt="Photo of me">
         <div class="bg-yellowMain mx-2 rounded-[20px]">
-          <div class="px-3 py-4 font-small text-center ">
+          <div class="px-3 pt-10 font-small text-center">
             <p>Hi! I'm Carolina. A creative business sidekick with a serious love for organization, logistics, and making things run smoothly behind the scenes.</p><br>
             <p>I'm a proud Latina, born in Argentina and raised in the U.S., with deep roots in the creative world. Over the years, I've explored dance, theater, art, music, film, fashion, and marketing. And have always been drawn to spaces full of creative energy. But while others were dreaming up big ideas, I found my passion in the structure that brings those ideas to life.</p><br>
             <p>Producing films is where it all clicked for me. I was the one happily managing permits, coordinating vendors, handling communications, and keeping everything on track, freeing up creatives to do what they do best. At university, I quickly became the go-to for all things admin and coordination, and honestly? I loved it.</p><br>
             <p>Now, I help creative entrepreneurs and teams stay focused on their vision while I handle the details. From admin and client comms to production support and social media. </p><br>
             <p>I believe when creatives have the space to create, magic happens. I'd love to be the one who helps make that happen for you.</p>
           </div>
-          <h2></h2>
+          <h2 class="font-large p-6 text-center text-2xl">I HOPE TO MEET YOU SOON!</h2>
+        </div>
+        <div class="flex justify-center mt-8">
+          <a class="back-button bg-tealMain border-2 border-white rounded-2xl py-4 px-3 font-small text-white shadow-custom" href="#home">Back to Home</a>
         </div>
       </div>
     </section>
     <!-- Experience Mobile -->
-    <section id="experience" class="hidden content-section">
-      <h1>Experience</h1>
+    <section id="experience" class="hidden content-section relative">
+      <div class="flex bg-creamMain">
+        <!-- Made entire content of page to SVG so it is always scaled correctly according to client design no matter screen size -->
+        <img class="grow" src="/public/images/experienceM.svg" alt="experience page">
+      </div>
+      <div class="absolute bottom-8 right-4">
+        <a class="back-button bg-tealMain border-2 border-white rounded-2xl py-4 px-3 font-small text-white shadow-custom" href="#home">Back to Home</a>
+      </div>
     </section>
     <!-- Inquiry Form Mobile -->
     <section id="inquiry" class="hidden content-section">
-      <h1>Inquiry</h1>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.14/iframeResizer.min.js"></script><iframe src="https://hello.dubsado.com/public/form/view/67e21e2b3cb76f003a4d4369" frameborder="0" style="width:1px; min-width:100%;"></iframe><script type="text/javascript">setTimeout(function(){iFrameResize({checkOrigin: false, heightCalculationMethod: "taggedElement"});}, 30)</script>
+      <div class="flex justify-center my-5">
+        <a class="back-button bg-darkTeal border-2 border-white rounded-2xl py-4 px-3 font-small text-white shadow-custom" href="#home">Back to Home</a>
+      </div>
     </section>
 
     <script src="/public/app.js"></script>

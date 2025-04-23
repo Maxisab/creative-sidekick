@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const homeContent = document.getElementById('home');
   const navLinks = document.querySelectorAll('.nav-link');
   const backButtons = document.querySelectorAll('.back-button');
+  const homeBG = document.body;
   
   // Toggle mobile menu
   hamburgerButton.addEventListener('click', function() {
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       });
   
-  // Handle all navigation links
+  // Handle all navigation links. I did this to avoid multiple page navigation.
   navLinks.forEach(link => {
       link.addEventListener('click', function(e) {
           e.preventDefault();
@@ -41,6 +42,17 @@ document.addEventListener('DOMContentLoaded', function() {
           });
               
           const targetSection = document.getElementById(targetId);
+          
+          // Change bg color in body to match section bg color
+          if (targetSection.id === 'about') {
+            homeBG.className = "bg-pinkMain"
+          } else if (targetSection.id === 'experience') {
+            homeBG.className = "bg-creamMain"
+          } else if (targetSection.id === 'inquiry') {
+            homeBG.className = "bg-tealMain"
+          }
+
+          // Display selected section
           if (targetSection) {
             targetSection.classList.remove('hidden');
             window.scrollTo(0, 0); // Scroll to top
@@ -58,6 +70,12 @@ document.addEventListener('DOMContentLoaded', function() {
           sections.forEach(section => {
               section.classList.add('hidden');
           });
+
+          // Change bg color in body to default
+          homeBG.className = "bg-greenMain"
+
+          mobileMenu.classList.add('hidden');
+          hamburgerButton.querySelector('img').src = '../public/images/hamburgerOpen.svg';
           
           window.scrollTo(0, 0); // Scroll to top
       });
