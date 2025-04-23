@@ -10,9 +10,9 @@
 <body class="bg-[#005239]">
   <!-- Navbar -->
     <nav class="bg-blueMain m-2 px-4 rounded-[12px] py-5 flex place-content-between">
-        <div class="name font-large text-[32px] text-white">Creative Sidekick</div>
-        <div id="hamburger-button" class="hamburgerMenu md:hidden cursor-pointer flex items-center">
-            <img class="w-10" src="./public/images/hamburgerOpen.svg" alt="Menu-open">
+        <div class="back-button font-large text-[32px] text-white">Creative Sidekick</div>
+        <div id="hamburger-button" class="hamburgerMenu lg:hidden cursor-pointer flex items-center">
+            <img class="w-10" src="../public/images/hamburgerOpen.svg" alt="Menu-open">
         </div>
     </nav>
     <div id="mobile-menu" class="hidden bg-blueMain rounded-b-[12px] py-3 absolute right-2 top-[84px] w-36 z-10 shadow-custom">
@@ -25,7 +25,7 @@
     <!-- Home page -->
     <div id="home">
         <div class="hero bg-pinkMain my-4 mx-2 rounded-[20px] flex">
-            <img class="w-60" src="./public/images/logo-sm.svg" alt="Creative Sidekick logo small">
+            <img class="w-60" src="/public/images/logo-sm.svg" alt="Creative Sidekick logo small">
             <div class="heroText py-5 pr-5">
                 <h1 class="font-large text-[28px] leading-7 text-greenMain mb-5">Professional</br>Virtual</br>Assistant</h1>
                 <p class="font-small text-[14px] text-default mr-[-10px]">Helping creatives focus on their art while I handle the details.</p>
@@ -67,7 +67,19 @@
 
     <!-- About Me Mobile -->
     <section id="about" class="hidden content-section">
-      <h1>About</h1>
+      <div class="bg-pinkMain relative">
+        <img src="/public/images/aboutHeroM.png" alt="Photo of me">
+        <div class="bg-yellowMain mx-2 rounded-[20px]">
+          <div class="px-3 py-4 font-small text-center ">
+            <p>Hi! I'm Carolina. A creative business sidekick with a serious love for organization, logistics, and making things run smoothly behind the scenes.</p><br>
+            <p>I'm a proud Latina, born in Argentina and raised in the U.S., with deep roots in the creative world. Over the years, I've explored dance, theater, art, music, film, fashion, and marketing. And have always been drawn to spaces full of creative energy. But while others were dreaming up big ideas, I found my passion in the structure that brings those ideas to life.</p><br>
+            <p>Producing films is where it all clicked for me. I was the one happily managing permits, coordinating vendors, handling communications, and keeping everything on track, freeing up creatives to do what they do best. At university, I quickly became the go-to for all things admin and coordination, and honestly? I loved it.</p><br>
+            <p>Now, I help creative entrepreneurs and teams stay focused on their vision while I handle the details. From admin and client comms to production support and social media. </p><br>
+            <p>I believe when creatives have the space to create, magic happens. I'd love to be the one who helps make that happen for you.</p>
+          </div>
+          <h2></h2>
+        </div>
+      </div>
     </section>
     <!-- Experience Mobile -->
     <section id="experience" class="hidden content-section">
@@ -78,6 +90,6 @@
       <h1>Inquiry</h1>
     </section>
 
-    <script src="app.js"></script>
+    <script src="/public/app.js"></script>
 </body>
 </html>
