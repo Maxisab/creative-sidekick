@@ -1,153 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
-    <link rel="shortcut icon" href="#">
-    <title>The Creative Sidekick</title>
-</head>
-<body class="bg-greenMain">
-  <!-- Navbar -->
-    <nav class="bg-blueMain m-2 px-4 rounded-[12px] py-5 flex place-content-between ">
-        <div class="back-button font-large text-[32px] text-white">Creative Sidekick</div>
-        <div id="hamburger-button" class="hamburgerMenu lg:hidden cursor-pointer flex items-center">
-            <img class="w-10" src="../public/images/hamburgerOpen.svg" alt="Menu-open">
-        </div>
-    </nav>
-    <div id="mobile-menu" class="hidden bg-blueMain rounded-b-[12px] py-3 absolute right-2 top-[84px] w-36 z-10 shadow-custom">
-        <div class="flex flex-col space-y-4">
-            <a class="nav-link text-pinkMain text-lg font-large text-center pt-2" href="#about">About Me</a>
-            <a class="nav-link text-creamMain text-lg font-large text-center pt-2" href="#experience">Experience</a>
-            <a class="nav-link text-tealMain text-lg font-large text-center pt-2 pb-2" href="#inquiry">Inquiry Form</a>
-        </div>
-    </div>
-    <!-- Home page -->
-    <div id="home" class="bg-greenMain">
-        <div class="hero bg-pinkMain my-4 mx-2 rounded-[20px] flex">
-            <img class="w-60" src="/public/images/logo-sm.svg" alt="Creative Sidekick logo small">
-            <div class="heroText py-5 pr-5">
-                <h1 class="font-large text-[28px] leading-7 text-greenMain mb-5">Professional</br>Virtual</br>Assistant</h1>
-                <p class="font-small text-[14px] text-default mr-[-10px]">Helping creatives focus on their art while I handle the details.</p>
-            </div>
-        </div>
-        <div class="services bg-yellowMain my-4 mx-2 rounded-[20px] relative">
-            <div class="flex place-content-between">
-                  <h1 class="font-large text-[28px] pl-8 text-default">Services</h1>
-                  <img class="absolute right-[35%] top-[-15px]" src="/public/images/mascot1.svg" alt="Sidekick Mascot">
-            </div>
-            <div class="grid grid-cols-2 gap-4 auto-rows-fr font-signika font-bold text-lg leading-6 py-5 mx-2 content-center">
-                <div class="card">Administrative<br>Support</div>
-                <div class="card">Media & Event<br>Production<br>Support</div>
-                <div class="card">Social Media<br>Management</div>
-                <div class="card">Content<br>Consulting</div>
-            </div>
-        </div>
-        <div class="contact bg-darkTeal my-4 mx-2 rounded-[20px] border-2 border-white text-white">
-            <div class="flex place-content-between pt-2">
-                <h1 class="font-large text-[28px] pl-9 text-center">Contact Me!</h1>
-                <img class="absolute right-[5%]" src="/public/images/laptopM.svg" alt="Laptop icon">
-            </div>
-            <div class="flex gap-5 justify-center items-center content-center py-10">
-                <div class="imageWrapper flex flex-col gap-8">
-                    <div class="flex justify-center">
-                        <img src="/public/images/insta.svg" alt="Instagram icon">
-                    </div>
-                    <img src="/public/images/email.svg" alt="Email icon">
-                </div>
-                <div class="textWrapper flex flex-col gap-10 justify-center">
-                    <p>@the_creativesidekick</p>
-                    <p>hello@thecreativesidekick.com</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Other pages of the mobile site -->
 
-    <!-- About Me Mobile -->
-    <section id="about" class="hidden content-section">
-      <div class="bg-pinkMain relative pt-[380px] pb-8 flex-col">
-        <img class="absolute top-4 ml-[-20px]" src="/public/images/aboutHeroM.png" alt="Photo of me">
-        <div class="bg-yellowMain mx-2 rounded-[20px]">
-          <div class="px-3 pt-10 font-small text-center">
-            <p>Hi! I'm Carolina. A creative business sidekick with a serious love for organization, logistics, and making things run smoothly behind the scenes.</p><br>
-            <p>I'm a proud Latina, born in Argentina and raised in the U.S., with deep roots in the creative world. Over the years, I've explored dance, theater, art, music, film, fashion, and marketing. And have always been drawn to spaces full of creative energy. But while others were dreaming up big ideas, I found my passion in the structure that brings those ideas to life.</p><br>
-            <p>Producing films is where it all clicked for me. I was the one happily managing permits, coordinating vendors, handling communications, and keeping everything on track, freeing up creatives to do what they do best. At university, I quickly became the go-to for all things admin and coordination, and honestly? I loved it.</p><br>
-            <p>Now, I help creative entrepreneurs and teams stay focused on their vision while I handle the details. From admin and client comms to production support and social media. </p><br>
-            <p>I believe when creatives have the space to create, magic happens. I'd love to be the one who helps make that happen for you.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="shortcut icon" href="#">
+  <title>The Creative Sidekick</title>
+</head>
+
+<body class="bg-greenMain">
+
+  <!-- Navbar -->
+
+  <nav class="bg-blueMain m-2 px-4 rounded-[12px] py-5 flex place-content-between ">
+    <div class="back-button font-large text-[32px] text-white">Creative Sidekick</div>
+    <div id="hamburger-button" class="hamburgerMenu lg:hidden cursor-pointer flex items-center">
+      <img class="w-10" src="../public/images/hamburgerOpen.svg" alt="Menu-open">
+    </div>
+  </nav>
+  <div id="mobile-menu"
+    class="hidden bg-blueMain rounded-b-[12px] py-3 absolute right-2 top-[84px] w-36 z-10 shadow-custom">
+    <div class="flex flex-col space-y-4">
+      <a class="nav-link text-pinkMain text-lg font-large text-center pt-2" href="#about">About Me</a>
+      <a class="nav-link text-creamMain text-lg font-large text-center pt-2" href="#experience">Experience</a>
+      <a class="nav-link text-tealMain text-lg font-large text-center pt-2 pb-2" href="#inquiry">Inquiry Form</a>
+    </div>
+  </div>
+
+  <!-- Home page -->
+
+  <div id="home" class="bg-greenMain">
+    <div class="hero bg-pinkMain my-4 mx-2 rounded-[20px] flex">
+      <img class="w-60" src="/public/images/logo-sm.svg" alt="Creative Sidekick logo small">
+      <div class="heroText py-5 pr-5">
+        <h1 class="font-large text-[28px] leading-7 text-greenMain mb-5">Professional</br>Virtual</br>Assistant</h1>
+        <p class="font-small text-[14px] text-default mr-[-10px]">Helping creatives focus on their art while I handle
+          the details.</p>
+      </div>
+    </div>
+    <div class="services bg-yellowMain my-4 mx-2 rounded-[20px] relative">
+      <div class="flex place-content-between">
+        <h1 class="font-large text-[28px] pl-8 text-default">Services</h1>
+        <img class="absolute right-[35%] top-[-15px]" src="/public/images/mascot1.svg" alt="Sidekick Mascot">
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 auto-rows-fr font-signika font-bold text-lg leading-6 py-5 mx-2 content-center">
+        <div class="card">Administrative<br>Support</div>
+        <div class="card">Media & Event<br>Production<br>Support</div>
+        <div class="card">Social Media<br>Management</div>
+        <div class="card">Content<br>Consulting</div>
+      </div>
+    </div>
+    <div class="contact bg-darkTeal my-4 mx-2 rounded-[20px] border-2 border-white text-white">
+      <div class="flex place-content-between pt-2">
+        <h1 class="font-large text-[28px] pl-9 text-center">Contact Me!</h1>
+        <img class="absolute right-[5%]" src="/public/images/laptopM.svg" alt="Laptop icon">
+      </div>
+      <div class="flex gap-5 justify-center items-center content-center py-10">
+        <div class="imageWrapper flex flex-col gap-8">
+          <div class="flex justify-center">
+            <img src="/public/images/insta.svg" alt="Instagram icon">
           </div>
-          <h2 class="font-large p-6 text-center text-2xl">I HOPE TO MEET YOU SOON!</h2>
+          <img src="/public/images/email.svg" alt="Email icon">
         </div>
-        <div class="flex justify-center mt-8">
-          <a class="back-button bg-tealMain border-2 border-white rounded-2xl py-4 px-3 font-small text-white shadow-custom" href="#home">Back to Home</a>
+        <div class="textWrapper flex flex-col gap-10 justify-center">
+          <p>@the_creativesidekick</p>
+          <p>hello@thecreativesidekick.com</p>
         </div>
       </div>
-    </section>
-    <!-- Experience Mobile -->
-    <section id="experience" class="hidden content-section relative">
-      <div class="bg-creamMain">
-        <h1 class="font-large p-3 text-center text-lg">HERE'S WHERE I GET TO SHOW OFF A BIT</h1>
-        <p class="font-small text-center text-[16px] px-7 pb-8">As a true Gemini, I'm a proud jack-of-all-trades. From E-Commerce and Fashion to Weddings, Film, Production, Editorials, and more. I've worn many hats and mastered the art of making things happen. Here's a quick peek at the roles that shaped me into the multi-skilled asset I am today.</p>
-        <div class="experienceList pt-10">
-          <div class="bg-pinkAccent rounded-[40px] ml-[25%] mr-5 relative pb-12">
-            <div class="flex">
-              <img class="absolute left-[-80px] top-[-60px]" src="/public/images/mascotStarM.svg" alt="Flower mascot with star">
-              <img class="absolute right-[-10px] top-[-25px]" src="/public/images/twoStarsM.svg" alt="Two stars">
-            </div>
-            <div class="text-center">              
-              <h1 class="font-large text-xl py-8">EXPERIENCE</h1>              
-            </div>
-            <ul class="font-small text-center leading-8">
-              <li>PERSONAL ASSISTANT</li>
-              <li>ADMINISTRATIVE ASSISTANT</li>
-              <li>CUSTOMER SERVICE REP</li>
-              <li>PRODUCER</li>
-              <li>PRODUCTION DESIGNER</li>
-              <li>BRIDAL CONSULTANT</li>
-              <li>EDITORIAL SHOOT ASSISTANT</li>
-              <li>ASSISTANT DIRECTOR</li>
-              <li>PRODUCTION COORDINATOR</li>
+    </div>
+  </div>
+
+  <!-- Other pages of the mobile site -->
+
+  <!-- About Me Mobile -->
+  <section id="about" class="hidden content-section">
+    <div class="bg-pinkMain relative pt-[380px] pb-8 flex-col">
+      <img class="absolute top-4 ml-[-20px]" src="/public/images/aboutHeroM.png" alt="Photo of me">
+      <div class="bg-yellowMain mx-2 rounded-[20px]">
+        <div class="px-3 pt-10 font-small text-center">
+          <p>Hi! I'm Carolina. A creative business sidekick with a serious love for organization, logistics, and making
+            things run smoothly behind the scenes.</p><br>
+          <p>I'm a proud Latina, born in Argentina and raised in the U.S., with deep roots in the creative world. Over
+            the years, I've explored dance, theater, art, music, film, fashion, and marketing. And have always been
+            drawn to spaces full of creative energy. But while others were dreaming up big ideas, I found my passion in
+            the structure that brings those ideas to life.</p><br>
+          <p>Producing films is where it all clicked for me. I was the one happily managing permits, coordinating
+            vendors, handling communications, and keeping everything on track, freeing up creatives to do what they do
+            best. At university, I quickly became the go-to for all things admin and coordination, and honestly? I loved
+            it.</p><br>
+          <p>Now, I help creative entrepreneurs and teams stay focused on their vision while I handle the details. From
+            admin and client comms to production support and social media. </p><br>
+          <p>I believe when creatives have the space to create, magic happens. I'd love to be the one who helps make
+            that happen for you.</p>
+        </div>
+        <h2 class="font-large p-6 text-center text-2xl">I HOPE TO MEET YOU SOON!</h2>
+      </div>
+      <div class="flex justify-center mt-8">
+        <a class="back-button bg-tealMain border-2 border-white rounded-2xl py-4 px-3 font-small text-white shadow-custom"
+          href="#home">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Mobile -->
+
+  <section id="experience" class="hidden content-section relative">
+    <div class="bg-creamMain">
+      <h1 class="font-large p-3 text-center text-lg">HERE'S WHERE I GET TO SHOW OFF A BIT</h1>
+      <p class="font-small text-center text-[16px] px-7 pb-8">As a true Gemini, I'm a proud jack-of-all-trades. From
+        E-Commerce and Fashion to Weddings, Film, Production, Editorials, and more. I've worn many hats and mastered the
+        art of making things happen. Here's a quick peek at the roles that shaped me into the multi-skilled asset I am
+        today.</p>
+      <div class="experienceList pt-10">
+        <div class="bg-pinkAccent rounded-[40px] ml-[25%] mr-5 relative pb-12">
+          <div class="flex">
+            <img class="absolute left-[-80px] top-[-60px]" src="/public/images/mascotStarM.svg"
+              alt="Flower mascot with star">
+            <img class="absolute right-[-10px] top-[-25px]" src="/public/images/twoStarsM.svg" alt="Two stars">
+          </div>
+          <div class="text-center">
+            <h1 class="font-large text-xl py-8">EXPERIENCE</h1>
+          </div>
+          <ul class="font-small text-center leading-8">
+            <li>PERSONAL ASSISTANT</li>
+            <li>ADMINISTRATIVE ASSISTANT</li>
+            <li>CUSTOMER SERVICE REP</li>
+            <li>PRODUCER</li>
+            <li>PRODUCTION DESIGNER</li>
+            <li>BRIDAL CONSULTANT</li>
+            <li>EDITORIAL SHOOT ASSISTANT</li>
+            <li>ASSISTANT DIRECTOR</li>
+            <li>PRODUCTION COORDINATOR</li>
+          </ul>
+        </div>
+        <div class="skillsList relative bg-[url(/public/images/skillsBG.svg)] bg-no-repeat mt-[-35px] pb-[15px]">
+          <div>
+            <img class="absolute left-1 top-10" src="/public/images/discoball.svg" alt="Discoball">
+          </div>
+          <div class="ml-16 pt-[70px]">
+            <h1 class="font-large text-xl indent-14">SKILLS</h1>
+            <ul class="list-disc list-inside text-small text-sm pt-3">
+              <li>Customer Service</li>
+              <li>Administration</li>
+              <li>Data Entry</li>
+              <li>Social Media</li>
+              <li>Bi-Lingual (Spanish & English)</li>
+              <li>Event Coordination</li>
+              <li>Film Production/Development</li>
+              <li>Scheduling</li>
+              <li>Calendaring</li>
+              <li>Premiere PRO</li>
+              <li>Adobe</li>
             </ul>
           </div>
-
-          <div class="skillsList relative bg-[url(/public/images/skillsBG.svg)] bg-no-repeat mt-[-35px] pb-[15px]">
-            <div>
-              <img class="absolute left-1 top-10" src="/public/images/discoball.svg" alt="Discoball">
-            </div>
-            <div class="ml-16 pt-[70px]">
-              <h1 class="font-large text-xl indent-14">SKILLS</h1>
-              <ul class="list-disc list-inside text-small text-sm pt-3">
-                <li>Customer Service</li>
-                <li>Administration</li>
-                <li>Data Entry</li>
-                <li>Social Media</li>
-                <li>Bi-Lingual (Spanish & English)</li>
-                <li>Event Coordination</li>
-                <li>Film Production/Development</li>
-                <li>Scheduling</li>
-                <li>Calendaring</li>
-                <li>Premiere PRO</li>
-                <li>Adobe</li>
-              </ul>
-            </div>
-          </div>
         </div>
-        <!-- Made entire content of page to SVG so it is always scaled correctly according to client design no matter screen size -->
-        <!-- <img class="grow" src="/public/images/experienceM.svg" alt="experience page"> -->
       </div>
-      <div class="absolute bottom-8 right-4">
-        <a class="back-button bg-tealMain border-2 border-white rounded-2xl py-4 px-3 font-small text-white shadow-custom" href="#home">Back to Home</a>
-      </div>
-    </section>
-    <!-- Inquiry Form Mobile -->
-    <section id="inquiry" class="hidden content-section">
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.14/iframeResizer.min.js"></script><iframe src="https://hello.dubsado.com/public/form/view/67e21e2b3cb76f003a4d4369" frameborder="0" style="width:1px; min-width:100%;"></iframe><script type="text/javascript">setTimeout(function(){iFrameResize({checkOrigin: false, heightCalculationMethod: "taggedElement"});}, 30)</script>
-      <div class="flex justify-center my-5">
-        <a class="back-button bg-darkTeal border-2 border-white rounded-2xl py-4 px-3 font-small text-white shadow-custom" href="#home">Back to Home</a>
-      </div>
-    </section>
+    </div>
+    <div class="absolute bottom-8 right-4">
+      <a class="back-button bg-tealMain border-2 border-white rounded-2xl py-4 px-3 font-small text-white shadow-custom"
+        href="#home">Back to Home</a>
+    </div>
+  </section>
 
-    <script src="/public/app.js"></script>
+  <!-- Inquiry Form Mobile -->
+   
+  <section id="inquiry" class="hidden content-section">
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.14/iframeResizer.min.js"></script><iframe
+      src="https://hello.dubsado.com/public/form/view/67e21e2b3cb76f003a4d4369" frameborder="0"
+      style="width:1px; min-width:100%;"></iframe>
+    <script
+      type="text/javascript">setTimeout(function () { iFrameResize({ checkOrigin: false, heightCalculationMethod: "taggedElement" }); }, 30)</script>
+    <div class="flex justify-center my-5">
+      <a class="back-button bg-darkTeal border-2 border-white rounded-2xl py-4 px-3 font-small text-white shadow-custom"
+        href="#home">Back to Home</a>
+    </div>
+  </section>
+
+  <script src="/public/app.js"></script>
 </body>
+
 </html>
