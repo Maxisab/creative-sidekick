@@ -1,12 +1,14 @@
+//  MOBILE FUNCTIONS 
 
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerButton = document.getElementById('hamburger-button');
   const mobileMenu = document.getElementById('mobile-menu');
   const sections = document.querySelectorAll('.content-section');  
-  const homeContent = document.getElementById('home');
+  const homeContentM = document.getElementById('home-mobile');
   const navLinks = document.querySelectorAll('.nav-link');
   const backButtons = document.querySelectorAll('.back-button');
   const homeBG = document.body;
+  
   
   // Toggle mobile menu
   hamburgerButton.addEventListener('click', function() {
@@ -34,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const targetId = this.getAttribute('href').substring(1);
           
           // Hide home content
-          homeContent.classList.add('hidden');
+          homeContentM.classList.add('hidden');
               
           // Hide all sections, then show the target section
           sections.forEach(section => {
@@ -66,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
           e.preventDefault();
           
           // Show home content, hide all sections
-          homeContent.classList.remove('hidden');
+          homeContentM.classList.remove('hidden');
           sections.forEach(section => {
               section.classList.add('hidden');
           });
@@ -81,3 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+// DESKTOP FUNCTIONS
+
